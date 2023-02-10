@@ -9,5 +9,5 @@
 - Backend: Node, Express
 - Frontend: React using NextJs and Tailwindcss
 - Database: MongoDB
-- ORM: Mongoose
+- ODM: Mongoose
 - Misc: Helmet (for hiding some headers), Morgan (for logging every apirequest)
