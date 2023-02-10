@@ -10,4 +10,4 @@
 - Frontend: React using NextJs and Tailwindcss
 - Database: MongoDB
 - ODM: Mongoose
-- Misc: Helmet (for hiding some headers), Morgan (for logging every apirequest)
+- Misc: Helmet (for hiding some headers), Morgan (for logging api requests)
