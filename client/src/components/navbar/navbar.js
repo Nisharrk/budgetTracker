@@ -1,7 +1,11 @@
 import React from "react";
 
 const Navbar = () => {
-  return <h2 className="">Budget Tracker 💸</h2>;
+  return (
+    <div className="bg-teal-600 p-3 text-lg rounded-md font-semibold">
+      Budget Tracker 💸
+    </div>
+  );
 };
 
 export default Navbar;
