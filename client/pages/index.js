@@ -1,5 +1,4 @@
-import Navbar from "../src/components/navbar/navbar.jsx";
-
-export default function Home() {
+const Home = () => {
   return <div>Hey there :)</div>;
-}
+};
+export default Home;
