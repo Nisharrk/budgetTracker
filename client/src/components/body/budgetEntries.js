@@ -20,15 +20,15 @@ const BudgetEntries = () => {
     <div className="px-4 py-4">
       {budgetEntry &&
         budgetEntry.map((item, index) => (
-          <div key={index} className="border-b bg-teal-100 rounded-xl">
+          <div key={index} className="border-b bg-teal-200 rounded-xl">
             <div
               onClick={() =>
                 setSelectedIndex(selectedIndex === index ? -1 : index)
               }
               className="flex items-center justify-between cursor-pointer hover:bg-black hover:text-white p-4 rounded-xl"
             >
-              <div className="w-1/2">{item.name}</div>
-              <div className="w-1/2 text-right">
+              <div className="w-1/6 border-r border-gray-300">{item.name}</div>
+              <div className="w-1/2 text-right pl-3">
                 {item.type === "expense" ? "-" : ""}${item.amount}
               </div>
             </div>
