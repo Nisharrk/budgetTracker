@@ -6,10 +6,14 @@
 
 ## You can find the expense tracker here -
 
-## Technologies:
+### Technologies:
 
-Backend: Node, Express
-Frontend: React using NextJS
-Database: MongoDB
-ORM: Mongoose
-misc: Helmet (for hiding some headers), Morgan (for logging every apirequest)
+- Backend: Node, Express
+
+- Frontend: React using NextJS
+
+- Database: MongoDB
+
+- ORM: Mongoose
+
+- Misc: Helmet (for hiding some headers), Morgan (for logging every apirequest)
