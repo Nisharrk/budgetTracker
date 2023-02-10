@@ -4,7 +4,7 @@ import Footer from "../footer/footer";
 
 export default function Layout(props) {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="">
       <Navbar />
       {props.children}
       <Footer />

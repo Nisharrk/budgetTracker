@@ -1,4 +1,6 @@
+import BudgetEntries from "@/src/components/body/budgetEntries";
+
 const Home = () => {
-  return <div className="">Hey there :)</div>;
+  return <BudgetEntries />;
 };
 export default Home;
