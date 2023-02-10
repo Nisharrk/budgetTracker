@@ -4,8 +4,6 @@
 
 #### This is an extension of my expense tracker - https://github.com/Nisharrk/expensetracker
 
-## You can find the expense tracker here -
-
 ### Technologies:
 
 - Backend: Node, Express
