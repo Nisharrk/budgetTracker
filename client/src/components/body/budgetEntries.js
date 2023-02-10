@@ -17,7 +17,7 @@ const BudgetEntries = () => {
   }, []);
 
   return (
-    <div className="px-4 py-4">
+    <div className="">
       {budgetEntry &&
         budgetEntry.map((item, index) => (
           <div key={index} className="border-b bg-teal-200 rounded-xl">
@@ -27,7 +27,7 @@ const BudgetEntries = () => {
               }
               className="flex items-center justify-between cursor-pointer hover:bg-black hover:text-white p-4 rounded-xl"
             >
-              <div className="w-1/6 border-r border-gray-300">{item.name}</div>
+              <div className="w-1/2 border-r border-white">{item.name}</div>
               <div className="w-1/2 text-right pl-3">
                 {item.type === "expense" ? "-" : ""}${item.amount}
               </div>
