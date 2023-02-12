@@ -1,4 +1,4 @@
-import AddBudgetEntry from "@/src/components/body/addBudgetEntry";
+import AddBudgetButton from "@/src/components/body/addBudgetEntry";
 import BudgetEntries from "@/src/components/body/BudgetEntries";
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <div className="w-1/2">
         <BudgetEntries />
-        <AddBudgetEntry />
+        <AddBudgetButton />
       </div>
     </div>
   );

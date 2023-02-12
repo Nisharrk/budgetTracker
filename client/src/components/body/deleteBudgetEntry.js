@@ -1,11 +1,11 @@
 import React from "react";
 
-const DeleteBudgetEntry = () => {
+const DeleteBudgetButton = () => {
   return (
     <div className="flex float-right">
-      <button className="bg-red-400 p-1 rounded-lg">Delete</button>
+      <button className="bg-black p-1 text-white rounded-lg">Delete</button>
     </div>
   );
 };
 
-export default DeleteBudgetEntry;
+export default DeleteBudgetButton;

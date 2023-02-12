@@ -1,7 +1,7 @@
 //import { data } from "autoprefixer";
 import React, { useEffect, useState } from "react";
 
-import DeleteBudgetEntry from "./DeleteBudgetEntry";
+import DeleteBudgetButton from "./DeleteBudgetEntry";
 
 const IncomeEntries = () => {
   const [budgetEntry, setBudgetEntry] = useState(null);
@@ -40,11 +40,13 @@ const IncomeEntries = () => {
                 </div>
               </div>
               {selectedIndex === index && (
-                <div className="p-4">
-                  <div className="text-sm px-2 text-gray-700">
+                <div className="flex p-4">
+                  <div className="w-1/2 text-sm px-2 text-gray-700">
                     Notes: {item.notes}
                   </div>
-                  {/* <DeleteBudgetEntry /> */}
+                  <div className="w-1/2">
+                    <DeleteBudgetButton />
+                  </div>
                 </div>
               )}
             </div>
