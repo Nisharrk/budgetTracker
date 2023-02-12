@@ -4,7 +4,7 @@ import Footer from "../footer/footer";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div className="font-sans">
       <Navbar />
       {children}
       <Footer />

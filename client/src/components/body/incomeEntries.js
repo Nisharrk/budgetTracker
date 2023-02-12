@@ -19,17 +19,20 @@ const IncomeEntries = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-teal-100 rounded-2xl mt-2 mr-2 mb-2 shadow-md">
+      <p className="text-xl text-slate-600 text-center p-4 bg-teal-300 rounded-xl font-semibold">
+        Income
+      </p>
       {budgetEntry &&
         budgetEntry
           .filter((entry) => entry.type === "income")
           .map((item, index) => (
-            <div key={index} className="bg-teal-100 rounded-xl m-1">
+            <div key={index} className="border-b m-1">
               <div
                 onClick={() =>
                   setSelectedIndex(selectedIndex === index ? -1 : index)
                 }
-                className="flex items-center justify-between cursor-pointer hover:bg-teal-300 hover:text-white p-4 rounded-xl"
+                className="flex items-center justify-between text-slate-600 cursor-pointer hover:bg-teal-300 hover:text-white p-4 rounded-xl"
               >
                 <div className="w-1/2 border-r border-white">{item.name}</div>
                 <div className="w-1/2 text-right pl-3">
@@ -41,7 +44,7 @@ const IncomeEntries = () => {
                   <div className="text-sm px-2 text-gray-700">
                     Notes: {item.notes}
                   </div>
-                  <DeleteBudgetEntry />
+                  {/* <DeleteBudgetEntry /> */}
                 </div>
               )}
             </div>
