@@ -3,7 +3,7 @@ import React from "react";
 const addBudgetEntry = () => {
   return (
     <div className="flex justify-center">
-      <button className="bg-teal-600 font-semibold hover:bg-black text-white p-3 fixed bottom-8 w-full">
+      <button className="bg-teal-600 font-semibold hover:bg-black text-white p-3 bottom-8 w-full">
         Add Budget Entry
       </button>
     </div>

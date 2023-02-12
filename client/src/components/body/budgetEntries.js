@@ -1,47 +1,18 @@
-//import { data } from "autoprefixer";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import IncomeEntries from "./incomeEntries";
+import ExpenseEntries from "./expenseEntries";
 
 const BudgetEntries = () => {
-  const [budgetEntry, setBudgetEntry] = useState(null);
-  const [selectedIndex, setSelectedIndex] = useState(-1);
-
-  useEffect(() => {
-    try {
-      fetch("http://localhost:8080/api/budget")
-        .then((res) => res.json())
-        .then((data) => setBudgetEntry(data));
-      console.log(data);
-    } catch (err) {
-      console.log(err);
-    }
-  }, []);
-
   return (
-    <div className="">
-      {budgetEntry &&
-        budgetEntry.map((item, index) => (
-          <div key={index} className="border-b bg-teal-200 rounded-xl">
-            <div
-              onClick={() =>
-                setSelectedIndex(selectedIndex === index ? -1 : index)
-              }
-              className="flex items-center justify-between cursor-pointer hover:bg-black hover:text-white p-4 rounded-xl"
-            >
-              <div className="w-1/2 border-r border-white">{item.name}</div>
-              <div className="w-1/2 text-right pl-3">
-                {item.type === "expense" ? "-" : ""}${item.amount}
-              </div>
-            </div>
-            {selectedIndex === index && (
-              <div className="p-4">
-                <p className="text-sm px-2 text-gray-700">
-                  Notes: {item.notes}
-                </p>
-              </div>
-            )}
-          </div>
-        ))}
+    <div className="flex">
+      <div className="w-1/2 float-left">
+        <IncomeEntries />
+      </div>
+      <div className="w-1/2 float-right">
+        <ExpenseEntries />
+      </div>
     </div>
   );
 };
+
 export default BudgetEntries;
