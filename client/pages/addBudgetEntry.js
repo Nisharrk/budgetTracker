@@ -75,6 +75,7 @@ const AddBudgetEntry = () => {
               type="number"
               id="amount"
               name="amount"
+              step=".01"
               required
             />
           </div>

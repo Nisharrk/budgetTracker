@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div class="bg-slate flex items-center justify-center mt-20 py-16">
       <div class="w-full max-w-sm">
-        <form class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl">
+        <form class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:shadow-teal-500">
           <h2 class="text-2xl font-medium mb-4 font-semibold text-gray-700">
             Login
           </h2>
