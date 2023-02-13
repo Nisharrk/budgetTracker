@@ -35,9 +35,7 @@ const ExpenseEntries = () => {
                 className="flex items-center justify-between text-slate-600 cursor-pointer hover:bg-teal-300 hover:text-white p-4 rounded-xl"
               >
                 <div className="w-1/2 border-r border-white">{item.name}</div>
-                <div className="w-1/2 text-right pl-3">
-                  {item.type === "expense" ? "-" : ""}${item.amount}
-                </div>
+                <div className="w-1/2 text-right pl-3">${item.amount}</div>
               </div>
               {selectedIndex === index && (
                 <div className="flex p-4">
