@@ -48,7 +48,7 @@ router.delete("/:id", async (req, res, next) => {
   }
 });
 
-router.get("/sum", async (req, res, next) => {
+router.get("/balance", async (req, res, next) => {
   try {
     const expenses = await Budget.aggregate([
       {
@@ -72,7 +72,12 @@ router.get("/sum", async (req, res, next) => {
         },
       },
     ]);
-    res.json({ expenses, income });
+    const balance = income[0].totalIncome - expenses[0].totalExpenses;
+    res.json({
+      expenses: expenses[0].totalExpenses,
+      income: income[0].totalIncome,
+      balance,
+    });
   } catch (error) {
     next(error);
   }

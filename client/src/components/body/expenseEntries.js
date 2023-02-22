@@ -12,7 +12,6 @@ const ExpenseEntries = () => {
       fetch("http://localhost:8080/api/budget")
         .then((res) => res.json())
         .then((data) => setBudgetEntry(data));
-      console.log(data);
     } catch (err) {
       console.log(err);
     }
@@ -43,7 +42,7 @@ const ExpenseEntries = () => {
                     Notes: {item.notes}
                   </div>
                   <div className="w-1/2">
-                    <DeleteBudgetButton />
+                    <DeleteBudgetButton id={item._id} />
                   </div>
                 </div>
               )}

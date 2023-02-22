@@ -6,6 +6,8 @@
 - [x] Client Setup
 - [x] Home Page
 - [x] Implement add button
+- [ ] Implement Delete button
+- [ ] Add total income and expenses
 - [ ] Implement react-hook-form in the login and add budget entry page
 - [ ] Add pagination for monthly entries in the home page
       ...
