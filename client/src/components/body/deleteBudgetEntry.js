@@ -10,7 +10,7 @@ const DeleteBudgetButton = ({ id }) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-      // Refresh the list of budget entries
+      // change this
       window.location.reload();
     } catch (error) {
       console.log(error);
