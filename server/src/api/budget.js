@@ -72,7 +72,9 @@ router.get("/balance", async (req, res, next) => {
         },
       },
     ]);
-    const balance = income[0].totalIncome - expenses[0].totalExpenses;
+    const balance = (income[0].totalIncome - expenses[0].totalExpenses).toFixed(
+      2
+    );
     res.json({
       expenses: expenses[0].totalExpenses,
       income: income[0].totalIncome,
