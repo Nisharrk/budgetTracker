@@ -11,7 +11,9 @@ const Home = () => {
         <BudgetEntries />
         <AddBudgetButton />
       </div>
-      <div className="w-1/2">{/* <DoughnutChart /> */}</div>
+      <div className="w-1/2">
+        <DoughnutChart />
+      </div>
     </div>
   );
 };

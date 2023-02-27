@@ -7,9 +7,6 @@ const Navbar = () => {
       <div className="w-1/2 text-3xl font-semibold">
         <Link href={"/"}>Budget Tracker 💵</Link>
       </div>
-      <div className="w-1/2 text-right pr-7 text-lg font-semibold">
-        <Link href={"/login"}>Log in</Link>
-      </div>
     </div>
   );
 };
