@@ -21,22 +21,22 @@ const Balance = () => {
   }, []);
 
   return (
-    <div className="flex">
-      <div>
-        <p className="text-4xl text-slate-700 p-4 font-semibold">Income:</p>
-        <p className="text-3xl text-slate-900 pl-20 pb-4 pt-0 font-semibold">
+    <div className="flex bg-black rounded-2xl">
+      <div className="w-1/3">
+        <p className="text-4xl text-white p-4 font-semibold">Income:</p>
+        <p className="text-3xl text-white pl-20 pb-4 pt-0 font-semibold">
           {total.income}
         </p>
       </div>
-      <div>
-        <p className="text-4xl text-slate-700 p-4 font-semibold">Expenses:</p>
-        <p className="text-3xl text-slate-900 pl-20 pb-4 pt-0 font-semibold">
+      <div className="w-1/3">
+        <p className="text-4xl text-white p-4 font-semibold">Expenses:</p>
+        <p className="text-3xl text-white pl-20 pb-4 pt-0 font-semibold">
           {total.expenses}
         </p>
       </div>
-      <div>
-        <p className="text-4xl text-slate-700 p-4 font-semibold">Balance:</p>
-        <p className="text-3xl text-slate-900 pl-20 pb-4 pt-0 font-semibold">
+      <div className="w-1/3">
+        <p className="text-4xl text-white p-4 font-semibold">Balance:</p>
+        <p className="text-3xl text-white pl-20 pb-4 pt-0 font-semibold">
           {total.balance}
         </p>
       </div>
