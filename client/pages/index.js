@@ -5,13 +5,13 @@ import DoughnutChart from "@/src/components/body/doughnutChart";
 
 const Home = () => {
   return (
-    <div className="flex">
-      <div className="w-1/2">
+    <div className="flex flex-col md:flex-row">
+      <div className="w-full md:w-1/2">
         <Balance />
         <BudgetEntries />
         <AddBudgetButton />
       </div>
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2 md:pl-4">
         <DoughnutChart />
       </div>
     </div>

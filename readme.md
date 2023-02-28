@@ -20,8 +20,9 @@
 - [x] Implement add button
 - [x] Implement Delete button
 - [x] Add total income and expenses
-- [ ] Add pagination for monthly entries in the home page
 - [x] Any type of Chart integration
+- [ ] Make it responsive
+- [ ] Add pagination for monthly entries in the home page
       ...
 
 #### Minor
@@ -38,4 +39,3 @@
 ## The UI (until now)
 
 ![Screenshot_20230227_124424](https://user-images.githubusercontent.com/36308094/221741352-498df53c-d75c-414b-a0b9-7ce6c7a17dd5.png)
-

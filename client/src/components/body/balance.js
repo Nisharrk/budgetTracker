@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import DeleteBudgetButton from "@/src/components/body/balance";
 
 const Balance = () => {
   const [total, setTotal] = useState({
