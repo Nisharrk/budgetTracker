@@ -8,4 +8,29 @@
 - Frontend: React using NextJs and Tailwindcss
 - Database: MongoDB
 - ODM: Mongoose
-- Misc: Helmet (for hiding some headers), Morgan (for logging api requests)
+- Misc: Helmet (for hiding some headers), Morgan (for logging api requests), ChartJS and React-Chartjs-2 (for the doughnut chart)
+
+# TODO
+
+### Major
+
+- [x] Server Setup
+- [x] Client Setup
+- [x] Home Page
+- [x] Implement add button
+- [x] Implement Delete button
+- [x] Add total income and expenses
+- [ ] Add pagination for monthly entries in the home page
+- [x] Any type of Chart integration
+      ...
+
+#### Minor
+
+- [x] Fix navigate to home page when adding entry
+- [x] Change theme
+
+### Optional (Future Changes)
+
+- [ ] Implement react-hook-form/formik in the add budget entry page
+- [ ] Migrate to Prisma
+- [ ] Typescript?

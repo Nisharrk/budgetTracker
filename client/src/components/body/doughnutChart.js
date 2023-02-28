@@ -35,5 +35,10 @@ export default function DoughnutChart() {
     ],
   };
 
-  return <Doughnut data={chartData} />;
+  return (
+    <div>
+      <Doughnut data={chartData} />
+    </div>
+  );
 }
+1;
