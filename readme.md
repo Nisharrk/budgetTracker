@@ -34,3 +34,7 @@
 - [ ] Implement react-hook-form/formik in the add budget entry page
 - [ ] Migrate to Prisma
 - [ ] Typescript?
+
+## The UI (until now)
+
+(Screenshot)[https://drive.google.com/file/d/1MeqhJzlPjaO9CVy2Xl7avb3sC9GV8LvX/view?usp=sharing]
