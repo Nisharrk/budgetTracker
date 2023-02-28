@@ -37,4 +37,5 @@
 
 ## The UI (until now)
 
-(Screenshot)[https://drive.google.com/file/d/1MeqhJzlPjaO9CVy2Xl7avb3sC9GV8LvX/view?usp=sharing]
+![Screenshot_20230227_124424](https://user-images.githubusercontent.com/36308094/221741352-498df53c-d75c-414b-a0b9-7ce6c7a17dd5.png)
+
