@@ -21,7 +21,7 @@
 - [x] Implement Delete button
 - [x] Add total income and expenses
 - [x] Any type of Chart integration
-- [ ] Make it responsive
+- [x] Make it responsive
 - [ ] Add pagination for monthly entries in the home page
       ...
 
