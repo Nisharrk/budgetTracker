@@ -22,7 +22,6 @@
 - [x] Add total income and expenses
 - [x] Any type of Chart integration
 - [x] Make it responsive
-- [ ] Add pagination for monthly entries in the home page
       ...
 
 #### Minor
@@ -35,3 +34,7 @@
 - [ ] Implement react-hook-form/formik in the add budget entry page
 - [ ] Migrate to Prisma
 - [ ] Typescript?
+
+## UI
+
+## OLD UI
