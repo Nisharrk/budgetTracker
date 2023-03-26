@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import TransactionItem from "@/components/transactionItem";
+import Modal from "@/components/transactionModal";
 
 export default function Transactions() {
   const [budgetEntry, setBudgetEntry] = useState(null);
+  const [selectedEntry, setSelectedEntry] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     try {
@@ -17,14 +20,35 @@ export default function Transactions() {
     }
   }, []);
 
+  const handleEntryClick = (entry) => {
+    setSelectedEntry(entry);
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setSelectedEntry(null);
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="flex p-4">
-      <div className="w-full pt-10 max-w-xl mx-auto">
-        {budgetEntry &&
-          budgetEntry.map((entry) => (
-            <TransactionItem key={entry._id} entry={entry} />
-          ))}
-      </div>
+    <div className="flex flex-col items-center pt-10">
+      {budgetEntry &&
+        budgetEntry.map((entry) => (
+          <div
+            key={entry._id}
+            className="w-full max-w-xl my-2"
+            onClick={() => handleEntryClick(entry)}
+          >
+            <TransactionItem entry={entry} />
+          </div>
+        ))}
+      {selectedEntry && (
+        <Modal
+          entry={selectedEntry}
+          isOpen={isModalOpen}
+          onRequestClose={handleModalClose}
+        />
+      )}
     </div>
   );
 }

@@ -6,7 +6,7 @@ export default function TransactionItem({ entry }) {
   const sign = isIncome ? "+" : "-";
 
   return (
-    <div className="flex items-center justify-between py-2 border-b border-gray-200">
+    <div className="flex items-center justify-between py-2 border-b border-gray-200 hover:bg-zinc-100 rounded-xl p-2">
       <div>
         <span
           className={`px-2 py-1 rounded-full text-sm font-medium ${
