@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TransactionItem from "@/components/transactionItem";
 import Modal from "@/components/transactionModal";
+import AddBudgetButton from "@/components/addBudgetButton";
 
 export default function Transactions() {
   const [budgetEntry, setBudgetEntry] = useState(null);
@@ -9,7 +10,7 @@ export default function Transactions() {
 
   useEffect(() => {
     try {
-      fetch("http://localhost:8080/api/budget")
+      fetch("https://weak-lime-springbok-boot.cyclic.app/api/budget")
         .then((res) => res.json())
         .then((data) => {
           setBudgetEntry(data);
@@ -31,24 +32,29 @@ export default function Transactions() {
   };
 
   return (
-    <div className="flex flex-col items-center pt-10">
-      {budgetEntry &&
-        budgetEntry.map((entry) => (
-          <div
-            key={entry._id}
-            className="w-full max-w-xl my-2"
-            onClick={() => handleEntryClick(entry)}
-          >
-            <TransactionItem entry={entry} />
-          </div>
-        ))}
-      {selectedEntry && (
-        <Modal
-          entry={selectedEntry}
-          isOpen={isModalOpen}
-          onRequestClose={handleModalClose}
-        />
-      )}
+    <div className="flex flex-col">
+      <div className="flex flex-col items-center pt-10">
+        {budgetEntry &&
+          budgetEntry.map((entry) => (
+            <div
+              key={entry._id}
+              className="w-full max-w-xl my-2"
+              onClick={() => handleEntryClick(entry)}
+            >
+              <TransactionItem entry={entry} />
+            </div>
+          ))}
+        {selectedEntry && (
+          <Modal
+            entry={selectedEntry}
+            isOpen={isModalOpen}
+            onRequestClose={handleModalClose}
+          />
+        )}
+        <div>
+          <AddBudgetButton />
+        </div>
+      </div>
     </div>
   );
 }

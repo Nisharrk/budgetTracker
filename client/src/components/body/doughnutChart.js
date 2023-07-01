@@ -36,7 +36,7 @@ export default function DoughnutChart() {
   };
 
   return (
-    <div>
+    <div className="w-1/2 h-auto">
       <Doughnut data={chartData} />
     </div>
   );

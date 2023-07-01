@@ -9,11 +9,6 @@ require("dotenv").config();
 const middlewares = require("./middlewares");
 const budget = require("./api/budget");
 
-// database connection
-mongoose.connect(process.env.DATABASE_URL, {
-  useNewUrlParser: true,
-});
-
 const app = express();
 
 app.use(morgan("common"));
@@ -34,6 +29,14 @@ app.use("/api/budget", budget);
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
 
-app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}`);
+// database connection
+mongoose.connect(process.env.DATABASE_URL, (err) => {
+  if (err) {
+    console.error(err);
+    return false;
+  }
+  // connection to mongo is successful, listen for requests
+  app.listen(port, () => {
+    console.log(`Listening at http://localhost:${port}`);
+  });
 });

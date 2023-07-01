@@ -10,7 +10,7 @@ export default function Main() {
 
   useEffect(() => {
     try {
-      fetch("http://localhost:8080/api/budget/balance")
+      fetch("https://weak-lime-springbok-boot.cyclic.app/api/budget/balance")
         .then((res) => res.json())
         .then((data) => {
           setTotal(data);
@@ -30,12 +30,12 @@ export default function Main() {
       ) : (
         <>
           <div className="flex flex-col m-10 text-4xl text-white">
-            <div className="flex flex-row">
-              <div className="mr-10 bg-teal-300 hover:text-black hover:shadow-2xl w-1/2 p-10 rounded-xl shadow2xl">
+            <div className="flex flex-col md:flex-row">
+              <div className="mr-10 bg-teal-300 hover:text-black hover:shadow-2xl w-full md:w-1/2 p-10 rounded-xl shadow-xl">
                 Income:
                 <p className="font-bold">{total.income}</p>
               </div>
-              <div className="w-1/2 bg-teal-300 hover:text-black hover:shadow-2xl w-1/2 p-10 rounded-xl shadow-xl">
+              <div className="w-full mt-5 md:mt-0 bg-teal-300 hover:text-black hover:shadow-2xl w-full md:w-1/2 p-10 rounded-xl shadow-xl">
                 Expense:
                 <p className="font-bold">{total.expenses}</p>
               </div>

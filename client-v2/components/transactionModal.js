@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import DeleteBudgetEntry from "./deleteBudgetEntry";
 
 Modal.setAppElement("#root");
 
@@ -10,7 +11,7 @@ export default function CustomModal({ entry, isOpen, onRequestClose }) {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={onRequestClose}>
-      <div className="flex flex-col items-center justify-center p-4">
+      <div className="flex flex-col items-center justify-center p-4 w-2/3 mx-auto">
         <h2 className="text-2xl font-bold">{entry.name}</h2>
         <div className="flex items-center justify-between my-2">
           <span
@@ -27,9 +28,7 @@ export default function CustomModal({ entry, isOpen, onRequestClose }) {
           </div>
         </div>
         <p className="text-gray-600">{entry.notes}</p>
-        <button className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded mt-4">
-          Delete
-        </button>
+        <DeleteBudgetEntry id={entry._id} />
       </div>
     </Modal>
   );
