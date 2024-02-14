@@ -32,13 +32,15 @@
 ### Optional (Future Changes)
 
 - [ ] Implement react-hook-form/formik in the add budget entry page
-- [ ] Migrate to Prisma
+- [ ] Migrate to Prisma?
 - [ ] Typescript?
 
 ## UI
+
 ![1](https://user-images.githubusercontent.com/36308094/227414321-58dd620e-161f-423d-847a-22cd79ce1731.png)
 
 ![2](https://user-images.githubusercontent.com/36308094/227414327-129277e3-2a66-45b1-b353-d671206a9462.png)
 
 ## OLD UI
+
 ![3](https://user-images.githubusercontent.com/36308094/227414336-eeb6fb40-a1e8-44e3-b03e-d6ba3220e8b4.png)
